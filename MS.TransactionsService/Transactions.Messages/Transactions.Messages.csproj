@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Authors>Efrain Bautista</Authors>
+    <Company>UPG FISI</Company>
+    <Copyright>2019</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com//UNMSM-UPG-FISI</PackageProjectUrl>
+    <Product>Transactions Messages</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NServiceBus" Version="7.2.0" />
+  </ItemGroup>
+</Project>

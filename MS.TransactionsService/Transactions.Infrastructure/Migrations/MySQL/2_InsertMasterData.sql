@@ -1,0 +1,6 @@
+﻿/*INSERT INTO transfer_state(transfer_state_id, state_name, created_at_utc, updated_at_utc)
+VALUES
+(1, 'INITIAL', UTC_TIMESTAMP(),UTC_TIMESTAMP()),
+(2, 'FAILED_DUE_TO_INSUFFICIENT_FUNDS', UTC_TIMESTAMP(),UTC_TIMESTAMP()),
+(3, 'DEBITED', UTC_TIMESTAMP(),UTC_TIMESTAMP()),
+(4, 'COMPLETED', UTC_TIMESTAMP(),UTC_TIMESTAMP());*/

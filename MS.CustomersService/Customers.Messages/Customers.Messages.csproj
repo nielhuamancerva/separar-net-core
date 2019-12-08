@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Authors>Efrain Bautista</Authors>
+    <Company>UPG FISI</Company>
+    <Product>Customers Messages</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>2019</Copyright>
+    <PackageProjectUrl>https://github.com//UNMSM-UPG-FISI</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Events\CustomerRegisteredEvent.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Events\CustomerRegisteredEvent.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NServiceBus" Version="7.1.8" />
+  </ItemGroup>
+
+</Project>

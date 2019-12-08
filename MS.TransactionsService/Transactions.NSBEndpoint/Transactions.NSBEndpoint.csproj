@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="3.2.1" />
+    <PackageReference Include="FluentMigrator.Runner" Version="3.2.1" />
+    <PackageReference Include="FluentMigrator.Runner.MySql" Version="3.2.1" />
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="MySql.Data" Version="8.0.18" />
+    <PackageReference Include="NServiceBus" Version="7.2.0" />
+    <PackageReference Include="NServiceBus.Newtonsoft.Json" Version="2.2.0" />
+    <PackageReference Include="NServiceBus.NHibernate" Version="8.2.0" />
+    <PackageReference Include="NServiceBus.RabbitMQ" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Accounts.Messages\Accounts.Messages.csproj" />
+    <ProjectReference Include="..\Customers.Messages\Customers.Messages.csproj" />
+    <ProjectReference Include="..\Transactions.Domain\Transactions.Domain.csproj" />
+    <ProjectReference Include="..\Transactions.Infrastructure\Transactions.Infrastructure.csproj" />
+    <ProjectReference Include="..\Transactions.Messages\Transactions.Messages.csproj" />
+  </ItemGroup>
+
+</Project>

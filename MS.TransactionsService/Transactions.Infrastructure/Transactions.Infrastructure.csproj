@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Migrations\MySQL\1_CreateInitialSchema.sql" />
+    <None Remove="Migrations\MySQL\2_InsertMasterData.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\MySQL\2_InsertMasterData.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\1_CreateInitialSchema.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="3.2.1" />
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="NServiceBus.NHibernate" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Transactions.Domain\Transactions.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

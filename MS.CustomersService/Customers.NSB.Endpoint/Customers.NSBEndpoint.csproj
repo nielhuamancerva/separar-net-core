@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="3.2.1" />
+    <PackageReference Include="FluentMigrator.Runner" Version="3.2.1" />
+    <PackageReference Include="FluentMigrator.Runner.MySql" Version="3.2.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.18" />
+    <PackageReference Include="NHibernate" Version="5.2.6" />
+    <PackageReference Include="NServiceBus" Version="7.2.0" />
+    <PackageReference Include="NServiceBus.NHibernate" Version="8.2.0" />
+    <PackageReference Include="NServiceBus.Persistence.Sql" Version="4.6.1" />
+    <PackageReference Include="NServiceBus.RabbitMQ" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Accounts.Messages\Accounts.Messages.csproj" />
+    <ProjectReference Include="..\Customers.Domain\Customers.Domain.csproj" />
+    <ProjectReference Include="..\Customers.Infrastructure\Customers.Infrastructure.csproj" />
+    <ProjectReference Include="..\Customers.Messages\Customers.Messages.csproj" />
+    <ProjectReference Include="..\Transactions.Messages\Transactions.Messages.csproj" />
+    <ProjectReference Include="..\UpgFisi.Common\UpgFisi.Common\UpgFisi.Common.csproj" />
+  </ItemGroup>
+
+</Project>
